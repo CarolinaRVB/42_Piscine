@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -14,6 +15,9 @@
 
 //Program with function inside main
 
+=======
+#include<unistd.h>
+>>>>>>> 318fb492faf739ba2047062cae667e7f9f1555ba
 int	main(int argc, char *argv[])
 {
 	int	i;
@@ -21,13 +25,19 @@ int	main(int argc, char *argv[])
 	i = 0;
 	if (argc != 2)
 	{
+<<<<<<< HEAD
 		write(1, "a\n", 2);
 		return (0);
+=======
+		write(1, "a\n", 1);
+		return(0);
+>>>>>>> 318fb492faf739ba2047062cae667e7f9f1555ba
 	}
 	while (argv[1][i] != '\0')
 	{
 		if (argv[1][i] == 'a')
 		{
+<<<<<<< HEAD
 			write(1, "a\n", 2);
 			return (0);
 		}
@@ -53,10 +63,14 @@ void	aff_a(char *str)
 		if (str[i] == 'a')
 		{
 			write(1, "a\n", 1);
+=======
+			write(1, "a", 1);
+>>>>>>> 318fb492faf739ba2047062cae667e7f9f1555ba
 		}
 		i++;
 	}
 	write(1, "\n", 1);
+<<<<<<< HEAD
 }
 int	main(int argc, char *argv[])
 {
@@ -69,3 +83,7 @@ int	main(int argc, char *argv[])
 	return (0);
 }
 */
+=======
+	return (0);
+}
+>>>>>>> 318fb492faf739ba2047062cae667e7f9f1555ba
