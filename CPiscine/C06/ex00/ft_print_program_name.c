@@ -25,6 +25,7 @@ int	main(int argc, char *argv[])
 		write(1, &c, 1);
 		i++;
 	}
+	return (0);
 }
 /*int	main(int argc, char *argv[])
 {
