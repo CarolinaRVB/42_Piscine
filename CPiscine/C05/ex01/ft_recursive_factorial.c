@@ -6,18 +6,18 @@
 /*   By: crebelo- <crebelo-@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 11:08:19 by crebelo-          #+#    #+#             */
-/*   Updated: 2023/03/20 11:10:27 by crebelo-         ###   ########.fr       */
+/*   Updated: 2023/03/21 11:21:41 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
+//#include<stdio.h>
 
 int	ft_recursive_factorial(int nb)
 {
 	int	i;
 
 	i = 1;
-	if (nb < 0 || nb > 9)
+	if (nb < 0)
 		return (0);
 	if (nb == 0 || nb == 1)
 		return (1);
