@@ -29,7 +29,9 @@ void	ft_write(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		write(1, 
+		write(1, &str[i], 1);
+		i++;
+	}
 }
 
 int	main(int argc, char *argv[])
@@ -50,13 +52,15 @@ int	main(int argc, char *argv[])
 		while (argv[2][j] != '\0')
 		{
 			if (argv[1][i] == argv[2][j])
+			{	
 				count++;
+				break ;
+			}
 			j++;
 		}
 		i++;
 	}
 	if (count == len)
-		ft_write(argvi[1]);
-	else
-		return (0);
+		ft_write(argv[1]);
+	return (0);
 }
